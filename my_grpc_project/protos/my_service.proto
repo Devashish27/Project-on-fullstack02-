@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package PROJECT_ON_FULLSTACK_MAIN;
+
+service weather_analyzer_pb2_grpc {
+  rpc MyMethod (MyRequest) returns (MyResponse);
+}
+
+message MyRequest {
+  string data = 1;
+}
+
+message MyResponse {
+  string result = 1;
+}
